@@ -39,34 +39,6 @@ export function isSelectable(model){
    const selectedCards = R.filter(card => card.isSelected === true, deck);
    return selectedCards.length < 2;
 }
-// export function updateLeftValue(value){
-//   return {
-//     type: ACTIONS.UPDATE_LEFT_INPUT,
-//     payload: value
-//   }
-// }
-// const updateCards = R.curry(
-//   (send, card) => {
-//     const { id } = card;
-
-
-//   }
-// );
-// const flipCard = R.curry((id, card) => id === card.id ? {...card, isSelected: true} : card);
-// const resetCards = R.map(card => ({...card, isSelected: false}));
-
-
-// const resetCards = R.map(card => {
-//   return { ...card, isSelected: false }   
-// }, model.decks);
-// return {
-//   ...model,
-//   ...model.decks,
-//   decks: [
-//     [...resetCards],          
-//     [...model.decks[1]]
-//   ]
-// }
 
 export function update(action, model){
   switch(action.type){
